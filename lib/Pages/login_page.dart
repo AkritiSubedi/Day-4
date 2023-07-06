@@ -14,7 +14,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   String name = "";
   bool changeButton = false;
-  
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -70,16 +70,21 @@ class _LoginPageState extends State<LoginPage> {
                       height: 50,
                       alignment: Alignment.center,
                       child: changeButton
-                      ?Icon(Icons.done,color: Colors.white,): Text(
-                        "login",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18),
-                      ),
+                          ? Icon(
+                              Icons.done,
+                              color: Colors.white,
+                            )
+                          : Text(
+                              "login",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18),
+                            ),
                       decoration: BoxDecoration(
                           color: Colors.deepPurple,
-                          borderRadius: BorderRadius.circular(changeButton ? 50: 8)),
+                          borderRadius:
+                              BorderRadius.circular(changeButton ? 50 : 8)),
                     ),
                   )
                   //ElevatedButton(
