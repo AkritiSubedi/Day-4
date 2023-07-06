@@ -1,6 +1,9 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
+
+import '../widgets/drawer.dart';
+
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
 
@@ -13,15 +16,14 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-       title: Text("Catalogs App"), 
+        title: Text("Catalogs App"),
       ),
       body: Center(
         child: Container(
-          child: Text("HI"),
+          child: Text("Hello! Welcome to my home page"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
-
