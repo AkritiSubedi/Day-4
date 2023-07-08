@@ -20,7 +20,7 @@ class _HomepageState extends State<Homepage> {
       ),
       body: Center(
         child: Container(
-          child: Text("Hello! Welcome to my home page"),
+          child: Text(context.runtimeType.toString()),
         ),
       ),
       drawer: MyDrawer(),
