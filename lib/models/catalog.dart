@@ -93,6 +93,13 @@ class Item {
 }
 
 class CatalogModel{
-static List<Item> items=[];
+static List<Item> items=[
+  Item(id: 1, 
+  name: "iphone 12 pro", 
+  desc: "12th generation", 
+  price: 999, 
+  color: "#33505a", 
+  image: "1.jpeg")
+];
 }
 
