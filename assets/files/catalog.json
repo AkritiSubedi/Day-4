@@ -1,0 +1,69 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "name": "Iphone",
+            "desc": "Apple iPhone 12th generation",
+            "price": 999.0,
+            "color": "#33505a",
+            "image": "https://example.com/iphone_image.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Iphone",
+            "desc": "Apple iPhone 12th generation",
+            "price": 999.0,
+            "color": "#33505a",
+            "image": "https://example.com/iphone_image.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Iphone",
+            "desc": "Apple iPhone 12th generation",
+            "price": 999.0,
+            "color": "#33505a",
+            "image": "https://example.com/iphone_image.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Iphone",
+            "desc": "Apple iPhone 12th generation",
+            "price": 999.0,
+            "color": "#33505a",
+            "image": "https://example.com/iphone_image.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Iphone",
+            "desc": "Apple iPhone 12th generation",
+            "price": 999.0,
+            "color": "#33505a",
+            "image": "https://example.com/iphone_image.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Iphone",
+            "desc": "Apple iPhone 12th generation",
+            "price": 999.0,
+            "color": "#33505a",
+            "image": "https://example.com/iphone_image.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Iphone",
+            "desc": "Apple iPhone 12th generation",
+            "price": 999.0,
+            "color": "#33505a",
+            "image": "https://example.com/iphone_image.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Iphone",
+            "desc": "Apple iPhone 12th generation",
+            "price": 999.0,
+            "color": "#33505a",
+            "image": "https://example.com/iphone_image.jpg"
+        }
+
+    ]
+}
