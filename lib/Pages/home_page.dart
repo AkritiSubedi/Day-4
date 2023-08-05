@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, depend_on_referenced_packages, unused_import, unnecessary_null_comparison
+// ignore_for_file: non_constant_identifier_names, unnecessary_null_comparison, unused_import
 
 import 'dart:convert';
 import 'package:flutter/material.dart';
@@ -6,7 +6,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_application_1/models/catalog.dart';
 import '../widgets/drawer.dart';
 import 'package:flutter_application_1/widgets/item_widget.dart';
-//import '../widgets/item_widget.dart'; // Import the necessary package for ItemWidget
 
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
@@ -24,8 +23,7 @@ class _HomepageState extends State<Homepage> {
 
   loadData() async {
     await Future.delayed(Duration(seconds: 2));
-    final catalogJson =
-        await rootBundle.loadString("assets/files/catalog.json");
+    final catalogJson = await rootBundle.loadString("assets/files/catalog.json");
     final decodeData = jsonDecode(catalogJson);
     var productsData = decodeData["products"];
     CatalogModel.items = List.from(productsData)
@@ -38,27 +36,26 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catalogs App"),
+        title: const Text("Catalogs App"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
-            ? ListView.builder(
-                itemCount: CatalogModel.items.length,
-                itemBuilder: (context, index) =>
-                  ItemWidget(
-                    item: CatalogModel.items[index],
-                  ),
-                  
+            ? GridView.builder(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                ),
+                itemCount: CatalogModel.items.length, // Added itemCount
+                itemBuilder: (context, index) {
+                  final item = CatalogModel.items[index]; // Changed 'Item' to 'item'
+                  return GridTile(child: Image.network(item.image));
+                },
               )
-            : Center(
+            : const Center(
                 child: CircularProgressIndicator(),
               ),
       ),
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
     );
   }
-}
-
-ItemWidget({required Item item}) {
 }

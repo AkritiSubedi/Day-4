@@ -6,63 +6,63 @@
             "desc": "Apple iPhone 12th generation",
             "price": 999.0,
             "color": "#33505a",
-            "image": "https://example.com/iphone_image.jpg"
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsmhIvFScU4IUA2dkAT0C1pJrBGuynktliiSpIbfhmsSG8FzQ2Dd-BCrzUQA3A4dPyRf4&usqp=CAU"
         },
         {
             "id": 2,
-            "name": "Iphone",
-            "desc": "Apple iPhone 12th generation",
-            "price": 999.0,
+            "name": "Pixel 5",
+            "desc": "Google pixel phone 5th generation",
+            "price": 1000.0,
             "color": "#33505a",
-            "image": "https://example.com/iphone_image.jpg"
+            "image": "https://en.wikipedia.org/wiki/Pixel_5#/media/File:Pixel_5_(2020).svg"
         },
         {
             "id": 3,
-            "name": "Iphone",
-            "desc": "Apple iPhone 12th generation",
-            "price": 999.0,
+            "name": "M1 macbook Air",
+            "desc": "Apple mackbook air",
+            "price": 9999.0,
             "color": "#33505a",
-            "image": "https://example.com/iphone_image.jpg"
+            "image": "https://photographylife.com/wp-content/uploads/2020/12/Apple-MacBook-Air-M1.jpg"
         },
         {
             "id": 4,
-            "name": "Iphone",
-            "desc": "Apple iPhone 12th generation",
-            "price": 999.0,
+            "name": "Playstation 5",
+            "desc": "sony playstation 5th generation",
+            "price": 699.0,
             "color": "#33505a",
-            "image": "https://example.com/iphone_image.jpg"
+            "image": "https://images.hdqwalls.com/wallpapers/playstation-5-console-5k-tj.jpg"
         },
         {
             "id": 5,
-            "name": "Iphone",
-            "desc": "Apple iPhone 12th generation",
-            "price": 999.0,
+            "name": "Airpods pro",
+            "desc": "Airpods pro 1st generation",
+            "price": 200.0,
             "color": "#33505a",
-            "image": "https://example.com/iphone_image.jpg"
+            "image": "https://en.wikipedia.org/wiki/Laptop#/media/File:Laptop_collage.jpg"
         },
         {
             "id": 6,
-            "name": "Iphone",
-            "desc": "Apple iPhone 12th generation",
-            "price": 999.0,
+            "name": "ipad pro",
+            "desc": "Apple ipad pro 1st generation",
+            "price": 799.0,
             "color": "#33505a",
-            "image": "https://example.com/iphone_image.jpg"
+            "image": "https://en.wikipedia.org/wiki/Laptop#/media/File:Laptop_collage.jpg"
         },
         {
             "id": 7,
-            "name": "Iphone",
-            "desc": "Apple iPhone 12th generation",
-            "price": 999.0,
+            "name": "Galaxy s21 Ultra",
+            "desc": "Samsung Galaxy s21 Ultra 2021 edition",
+            "price": 1299.0,
             "color": "#33505a",
-            "image": "https://example.com/iphone_image.jpg"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Back_S21_Ultra.png"
         },
         {
             "id": 8,
-            "name": "Iphone",
-            "desc": "Apple iPhone 12th generation",
-            "price": 999.0,
+            "name": "Galaxy S21",
+            "desc": "Samsung Galaxy s21 2021 edition",
+            "price": 899.0,
             "color": "#33505a",
-            "image": "https://example.com/iphone_image.jpg"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Back_S21_Ultra.png"
         }
 
     ]

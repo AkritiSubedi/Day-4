@@ -1,6 +1,17 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
-
+class CatalogModel {
+  static  List<Item> items = [
+    Item(
+      id: 1,
+      name: "Iphone 12 Pro",
+      desc: "Apple iPhone 12th generation",
+      price: 999.0,
+      color: "#33505a",
+      image:
+          "https://www.apple.com/newsroom/images/product/iphone/standard/apple_iphone-12_new-design_10132020.jpg.news_app_ed.jpg", // Replace with your actual image URL or path
+    ),
+  ];
+}
 class Item {
   final int id;
   final String name;
@@ -15,10 +26,8 @@ class Item {
     required this.desc,
     required this.price,
     required this.color,
-    required this.image,
+    required this.image
   });
-  
-
   Item copyWith({
     int? id,
     String? name,
@@ -92,14 +101,7 @@ class Item {
   }
 }
 
-class CatalogModel{
-static List<Item> items=[
-  Item(id: 1, 
-  name: "iphone 12 pro", 
-  desc: "12th generation", 
-  price: 999, 
-  color: "#33505a", 
-  image: "1.jpeg")
-];
-}
+
+
+
 
