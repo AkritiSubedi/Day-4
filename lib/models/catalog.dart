@@ -1,3 +1,4 @@
+
 class Item {
   final int id;
   final String name;
@@ -14,8 +15,6 @@ class Item {
     required this.color,
     required this.image
   });
-  
-
   Item copyWith({
     int? id,
     String? name,
@@ -88,3 +87,4 @@ class Item {
       image.hashCode;
   }
 }
+

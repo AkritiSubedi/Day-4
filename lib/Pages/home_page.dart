@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, depend_on_referenced_packages, unused_import, unnecessary_null_comparison
+// ignore_for_file: non_constant_identifier_names, unnecessary_null_comparison, unused_import
 
 import 'dart:convert';
 import 'package:flutter/material.dart';
@@ -20,8 +20,7 @@ class _HomepageState extends State<Homepage> {
 
   loadData() async {
     await Future.delayed(Duration(seconds: 2));
-    final catalogJson =
-        await rootBundle.loadString("assets/files/catalog.json");
+    final catalogJson = await rootBundle.loadString("assets/files/catalog.json");
     final decodeData = jsonDecode(catalogJson);
     var productsData = decodeData["products"];
     CatalogModel.items = List.from(productsData)
@@ -35,16 +34,13 @@ class _HomepageState extends State<Homepage> {
     final dummyList = List.generate(6, (index) => CatalogModel.items[0]);
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catalogs App"),
+        title: const Text("Catalogs App"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
 
       ),
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
     );
   }
-}
-
-ItemWidget({required Item item}) {
 }
