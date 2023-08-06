@@ -23,7 +23,8 @@ class _HomepageState extends State<Homepage> {
 
   loadData() async {
     await Future.delayed(Duration(seconds: 2));
-    final catalogJson = await rootBundle.loadString("assets/files/catalog.json");
+    final catalogJson =
+        await rootBundle.loadString("assets/files/catalog.json");
     final decodeData = jsonDecode(catalogJson);
     var productsData = decodeData["products"];
     CatalogModel.items = List.from(productsData)
@@ -44,11 +45,35 @@ class _HomepageState extends State<Homepage> {
             ? GridView.builder(
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
+                  mainAxisSpacing: 16,
+                  crossAxisSpacing: 16,
                 ),
                 itemCount: CatalogModel.items.length, // Added itemCount
                 itemBuilder: (context, index) {
-                  final item = CatalogModel.items[index]; // Changed 'Item' to 'item'
-                  return GridTile(child: Image.network(item.image));
+                  final item =
+                      CatalogModel.items[index]; // Changed 'Item' to 'item'
+                  return Card(
+                    clipBehavior: Clip.antiAlias,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10)),
+                    child: GridTile(
+                      header: Container(
+                        child: Text(
+                          item.name,
+                          style: TextStyle(color: Colors.white),),
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: Colors.deepPurple,
+                        ),
+                        ),
+                      child: Image.network(
+                        item.image,
+                        ),
+                      footer: Text(
+                        item.price.toString()),
+                      ),
+                      
+                  );
                 },
               )
             : const Center(

@@ -4,7 +4,7 @@ class CatalogModel {
     Item(
       id: 1,
       name: "Iphone 12 Pro",
-      desc: "Apple iPhone 12th generation",
+      desc: "Apple IPhone 12th generation",
       price: 999.0,
       color: "#33505a",
       image:
