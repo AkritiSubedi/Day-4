@@ -3,7 +3,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 
-
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
 
@@ -34,8 +33,3 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     final dummyList = List.generate(6, (index) => CatalogModel.items[0]);
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Catalogs App"),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
