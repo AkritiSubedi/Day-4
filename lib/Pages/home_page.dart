@@ -2,11 +2,7 @@
 
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_application_1/models/catalog.dart';
-import '../widgets/drawer.dart';
-import 'package:flutter_application_1/widgets/item_widget.dart';
-import 'package:velocity_x/velocity_x.dart';
+
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
 
@@ -35,14 +31,5 @@ class _HomepageState extends State<Homepage> {
 
   @override
   Widget build(BuildContext context) {
+    final dummyList = List.generate(6, (index) => CatalogModel.items[0]);
     return Scaffold(
-      
-     body: Column(
-      children:[
-        "Catalog App".text.make(),
-        
-      ]
-     )
-    );
-  }
-}
