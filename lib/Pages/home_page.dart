@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_application_1/models/catalog.dart';
 import '../widgets/drawer.dart';
 import 'package:flutter_application_1/widgets/item_widget.dart';
-
+import 'package:velocity_x/velocity_x.dart';
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
 
@@ -36,51 +36,13 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Catalogs App"),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
-            ? GridView.builder(
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
-                  mainAxisSpacing: 16,
-                  crossAxisSpacing: 16,
-                ),
-                itemCount: CatalogModel.items.length, // Added itemCount
-                itemBuilder: (context, index) {
-                  final item =
-                      CatalogModel.items[index]; // Changed 'Item' to 'item'
-                  return Card(
-                    clipBehavior: Clip.antiAlias,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10)),
-                    child: GridTile(
-                      header: Container(
-                        child: Text(
-                          item.name,
-                          style: TextStyle(color: Colors.white),),
-                        padding: const EdgeInsets.all(12),
-                        decoration: BoxDecoration(
-                          color: Colors.deepPurple,
-                        ),
-                        ),
-                      child: Image.network(
-                        item.image,
-                        ),
-                      footer: Text(
-                        item.price.toString()),
-                      ),
-                      
-                  );
-                },
-              )
-            : const Center(
-                child: CircularProgressIndicator(),
-              ),
-      ),
-      drawer: const MyDrawer(),
+      
+     body: Column(
+      children:[
+        "Catalog App".text.make(),
+        
+      ]
+     )
     );
   }
 }
